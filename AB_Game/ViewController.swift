@@ -61,14 +61,12 @@ class ViewController: UIViewController {
         //這邊有bug！要再修改。1234會變成4b。
         for var i=0; i<4; i++ {
             for var j=0;j<4;j++ {
-                if i==j {
-                    if num_array[i] == ans[j]{
+                if num_array[i] == ans[j] {
+                    if i == j {
                         a++
                     }
-                    else{
-                        if num_array[i] != ans[j]{
-                            b++
-                        }
+                    else {
+                        b++
                     }
                 }
             }
